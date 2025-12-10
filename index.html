@@ -23,7 +23,10 @@
     <!-- social -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- fav -->
     <link rel="shortcut icon" href="" type="image/x-icon" />
@@ -62,10 +65,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-danger" href="#">About Us</a>
+              <a class="nav-link text-danger" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-danger" href="#">Contact US</a>
+              <a class="nav-link text-danger" href="#contact">Contact US</a>
             </li>
             <!-- dropdown -->
             <li class="nav-item dropdown text-danger">
@@ -80,17 +83,23 @@
               </a>
               <ul class="dropdown-menu bg-danger-subtle">
                 <li>
-                  <a class="dropdown-item text-danger bg-danger-subtle" href="#"
+                  <a
+                    class="dropdown-item text-danger bg-danger-subtle"
+                    href="noddle.html"
                     >Noddle</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item text-danger bg-danger-subtle" href="#"
+                  <a
+                    class="dropdown-item text-danger bg-danger-subtle"
+                    href="dessert.html"
                     >Dessert</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item text-danger bg-danger-subtle" href="#"
+                  <a
+                    class="dropdown-item text-danger bg-danger-subtle"
+                    href="dessert.html"
                     >Soft Drink</a
                   >
                 </li>
@@ -170,7 +179,7 @@
     </div>
 
     <!-- order menu card -->
-    <div>
+    <div id="menu">
       <!-- noddle -->
       <div
         class="card1 mb-3 p-3 card-wrap method"
@@ -192,7 +201,7 @@
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
-              <a href="#" class="d-block text-center pt-3"
+              <a href="noddle.html" class="d-block text-center pt-3"
                 ><input
                   type="button"
                   value="Get Start"
@@ -227,7 +236,7 @@
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
-              <a href="#" class="d-block text-center pt-3"
+              <a href="dessert.html" class="d-block text-center pt-3"
                 ><input
                   type="button"
                   value="Get Start"
@@ -262,7 +271,7 @@
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
-              <a href="#" class="d-block text-center pt-3"
+              <a href="softdrink.html" class="d-block text-center pt-3"
                 ><input
                   type="button"
                   value="Get Start"
@@ -360,21 +369,33 @@
     </div>
 
     <!-- Contact US -->
+    <footer>
+      <div class="contact footer-box" id="contact">
+        <h3 class="leter">Contacts</h3>
+        <p class="leter">
+          <i class="fa-solid fa-location-dot leter"></i>12st Street, Yato,
+          Japanese
+        </p>
+        <p class="leter">
+          <i class="fa-solid fa-envelope leter"></i> obento12@gmail.com
+        </p>
+        <p class="leter"><i class="fa-solid fa-phone leter"></i>+84302436789</p>
+        <!-- social -->
+        <div class="footer-box">
+          <h4 class="leter">follow us</h4>
 
-    <div class="contact">
-      <h3 class="leter">Contacts</h3>
+          <i class="fa-brands fa-github" style="color: #050505"></i>
 
-      <p class="leter">
-        <i class="fa-solid fa-location-dot leter"></i>12st Street, Yato,
-        Japanese
-      </p>
+          <i class="fa-brands fa-meta" style="color: hsl(206, 99%, 65%)"></i>
 
-      <p class="leter">
-        <i class="fa-solid fa-envelope leter"></i> obento12@gmail.com
-      </p>
+          <i class="fa-brands fa-instagram fa-sm" style="color: #ea61a3"></i>
 
-      <p class="leter"><i class="fa-solid fa-phone leter"></i>+84302436789</p>
-    </div>
+          <i class="fa-brands fa-twitter" style="color: #74c0fc"></i>
+
+          <i class="fa-brands fa-youtube" style="color: #e01010"></i>
+        </div>
+      </div>
+    </footer>
 
     <!-- bootstarp cdn js -->
     <script
