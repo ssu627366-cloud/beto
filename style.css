@@ -15,16 +15,13 @@ html {
 
 /* header */
 header {
-  position: relative;
   background-image: url(images/reman-red.jpg);
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  padding: 100px;
+  padding: 100px 0;
   display: block;
   unicode-bidi: isolate;
-  box-shadow: 0 20px 40px rgba(2, 12, 27, 0.25);
 }
 span {
   font-family: "Shizuru", system-ui;
