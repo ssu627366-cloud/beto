@@ -300,16 +300,6 @@ td {
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
 }
 
-.method .icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 10px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(180deg, #fff8f2, #fff);
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  font-size: 20px;
-}
 .method h4 {
   margin: 0 0 4px;
   font-size: 15px;
@@ -332,10 +322,9 @@ td {
 /* contact us */
 
 .footer {
-  background-color: #dc3545;
-  color: #f1aeb5;
+  background-color: #b71c1c;
   padding: 50px 20px;
-  font-family: Arial, sans-serif;
+
   border-radius: 50px 0;
 }
 
@@ -355,13 +344,11 @@ td {
   margin-bottom: 15px;
   font-size: 20px;
   font-weight: bold;
-  color: #f1aeb5;
 }
 
 .footer-column ul {
   padding: 0;
   list-style: none;
-  color: #f1aeb5;
 }
 
 .footer-column ul li {
