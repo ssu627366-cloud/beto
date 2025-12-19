@@ -29,259 +29,195 @@
       referrerpolicy="no-referrer"
     />
     <!-- fav -->
-    <link rel="shortcut icon" href="image/logo.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="image/download.png" type="image/x-icon" />
 
     <!-- external css -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <!-- left bar -->
-        <div class="col-2 bg-danger">
-          <h2 class="h4 py-3 text-center">
-            <img src="image/logo.jpg" alt="" style="width: 40px" />
-            <span class="d-none d-lg-inline text-uppercase text-danger-subtle"
-              >bento</span
-            >
-          </h2>
-          <div class="list-group">
-            <span
-              class="list-group-item list-group-item-action d-none d-lg-block text-uppercase disabled"
-              aria-current="true"
-            >
-              control
-            </span>
-            <a
-              href="#"
-              class="list-group-item list-group-item-action active me-2 text-center text-lg-start"
-              ><i class="fa-regular fa-house"></i>
-              <span class="d-none d-lg-inline">dashboard</span></a
-            >
-            <a
-              href="#"
-              class="list-group-item list-group-item-action me-2 text-center text-lg-start"
-              ><i class="fa-solid fa-bowl-food"></i>
-              <span class="d-none d-lg-inline">noddle</span></a
-            >
-            <a
-              href="#"
-              class="list-group-item list-group-item-action me-2 text-center text-lg-start"
-              ><i class="fa-solid fa-cheese"></i>
-              <span class="d-none d-lg-inline">dessert</span></a
-            >
-            <a
-              href="#"
-              class="list-group-item list-group-item-action me-2 text-center text-lg-start"
-              ><i class="fa-solid fa-mug-hot"></i>
-              <span class="d-none d-lg-inline">drink</span></a
-            >
-          </div>
+    <!-- side bar -->
+    <div class="sidebar">
+      <div class="logo"></div>
+      <ul class="menu">
+        <li class="active">
+          <a href="">
+            <i class="fas fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-chart-bar"></i>
+            <span>Statistics</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-briefcase"></i>
+            <span>Careers</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-question-circle"></i>
+            <span>FAQ</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-star"></i>
+            <span>Testimonials</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fas fa-cog"></i>
+            <span>settings</span>
+          </a>
+        </li>
+        <li class="logout">
+          <a href="">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Log Out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- main sectioon -->
+    <div class="main--content">
+      <div class="header--warpper">
+        <div class="header--title">
+          <span>Primary</span>
+          <h2>Dashboard</h2>
         </div>
+        <div class="user--info">
+          <div class="search--box">
+            <i class="fa-solid fa-search"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+          <img src="image/profle.jpg" alt="" />
+        </div>
+      </div>
 
-        <!-- right bar -->
-        <div class="col-10">
-          <!-- nav -->
-          <ul class="nav justify-content-end py-3 bg-danger-subtle">
-            <li class="nav-item dropdown">
-              <button
-                class="btn dropdown-toggle nav-link text-danger"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-user"></i>
-              </button>
-              <ul class="dropdown-menu bg-danger-subtle">
-                <li>
-                  <a class="dropdown-item text-danger bg-danger-subtle" href="#"
-                    >user profile</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item text-danger bg-danger-subtle" href="#"
-                    >log out</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-danger" href="#"
-                ><i class="fa-solid fa-gears"></i
-              ></a>
-            </li>
-          </ul>
-
-          <div class="container py-3">
-            <div class="row">
-              <div class="col mt-2">
-                <!-- download alet box -->
-                <div class="alert alert-success" role="alert">
-                  <i class="fa-solid fa-download me-2"></i>
-                  A new version of admin version is released.
-                  <a href="">dowmload now</a>
-                </div>
+      <!-- card -->
+      <div class="card--container mt-2">
+        <h3 class="main--title">Today's Data</h3>
+        <div class="card--wrapper row d-flex flex-column flex-lg-row">
+          <div class="payment--card light-red mt-2 col">
+            <div class="card--header">
+              <div class="amount">
+                <span class="title">Playment amount</span>
+                <span class="amount-value">$500.00</span>
               </div>
+              <i class="fas fa-dollar-sign icon"></i>
             </div>
+
+            <span class="card-detial">**** **** **** 1624</span>
           </div>
 
-          <!-- quick start -->
-          <div class="mt-2">
-            <h2 class="h5 text-danger text-uppercase">Quick Satrt</h2>
-            <div class="row d-flex flex-colum flex-lg-row">
-              <div class="col mt-2">
-                <div class="card">
-                  <div class="card-body">noddle ,ramen</div>
-                </div>
+          <div class="payment--card light-purple mt-2 col">
+            <div class="card--header">
+              <div class="amount">
+                <span class="title">Playment Order</span>
+                <span class="amount-value">$350.00</span>
               </div>
-              <div class="col mt-2">
-                <div class="card">
-                  <div class="card-body">dessert , sushi</div>
-                </div>
-              </div>
-              <div class="col mt-2">
-                <div class="card">
-                  <div class="card-body">drink , tea</div>
-                </div>
-              </div>
-              <div class="col mt-2">
-                <div class="card">
-                  <div class="card-body">home , logo</div>
-                </div>
-              </div>
+              <i class="fas fa-list-alt ico"></i>
             </div>
+
+            <span class="card-detial">**** **** **** 1764</span>
           </div>
 
-          <!-- loction -->
-          <div class="row d-flex flex-column flex-lg-row mt-2">
-            <div class="col mt-2">
-              <h2 class="h5 text-danger text-uppercase">Location</h2>
-              <div class="card">
-                <div class="card-body">
-                  <div class="mb-3">
-                    <span>reginal</span>
-                    <div
-                      class="progress mt-2"
-                      role="progressbar"
-                      aria-label="Success example"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="height: 5px"
-                    >
-                      <div
-                        class="progress-bar bg-success"
-                        style="width: 25%"
-                      ></div>
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <span>gobal</span>
-                    <div
-                      class="progress mt-2"
-                      role="progressbar"
-                      aria-label="Success example"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="height: 5px"
-                    >
-                      <div
-                        class="progress-bar bg-primary"
-                        style="width: 75%"
-                      ></div>
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <span>Local</span>
-                    <div
-                      class="progress mt-2"
-                      role="progressbar"
-                      aria-label="Success example"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="height: 5px"
-                    >
-                      <div
-                        class="progress-bar bg-warning"
-                        style="width: 50%"
-                      ></div>
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <span>Internal</span>
-                    <div
-                      class="progress mt-2"
-                      role="progressbar"
-                      aria-label="Success example"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style="height: 5px"
-                    >
-                      <div
-                        class="progress-bar bg-danger"
-                        style="width: 25%"
-                      ></div>
-                    </div>
-                  </div>
-                </div>
+          <div class="payment--card light-green mt-2 col">
+            <div class="card--header">
+              <div class="amount">
+                <span class="title">Playment Customer</span>
+                <span class="amount-value">$300.00</span>
               </div>
+              <i class="fas fa-user ic"></i>
             </div>
+
+            <span class="card-detial">**** **** **** 1034</span>
           </div>
 
-          <!-- data  -->
-          <div class="col mt-2">
-            <h2 class="h5 text-danger text-uppercase">Location</h2>
-            <div class="card">
-              <div class="card-body">
-                <!-- btn gp -->
-                <div class="text-end">
-                  <button class="btn btn-outline-danger">1</button>
-                  <button class="btn btn-outline-danger">2</button>
-                  <button class="btn btn-outline-danger">3</button>
-                </div>
-                <!-- table -->
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>John</td>
-                      <td>Doe</td>
-                      <td>@social</td>
-                    </tr>
-                  </tbody>
-                </table>
+          <div class="payment--card light-blue mt-2 col">
+            <div class="card--header">
+              <div class="amount">
+                <span class="title">Playment Proceed</span>
+                <span class="amount-value">$200.00</span>
               </div>
+              <i class="fas fa-check i"></i>
             </div>
+
+            <span class="card-detial">**** **** **** 1614</span>
           </div>
         </div>
       </div>
-      <!-- footer -->
-      <div class="text-center py-3">
-        <p>copyright &copy; 2025 bento</p>
+      <!-- table -->
+      <div class="tabular--warpper">
+        <h3 class="main--title">Finance</h3>
+        <div class="table--container">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Transaction Type</th>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2023-05-01</td>
+                <td>Expenses</td>
+                <td>Offical Supplies</td>
+                <td>$250</td>
+                <td>Offical Expenses</td>
+                <td>pending</td>
+                <td><button>Edit</button></td>
+              </tr>
+              <tr>
+                <td>2023-05-02</td>
+                <td>Income</td>
+                <td>Offical Payment</td>
+                <td>$500</td>
+                <td>Sales</td>
+                <td>Completed</td>
+                <td><button>Edit</button></td>
+              </tr>
+              <tr>
+                <td>2023-05-03</td>
+                <td>Expenses</td>
+                <td>Menu Expenses</td>
+                <td>$250</td>
+                <td>Menu</td>
+                <td>pending</td>
+                <td><button>Edit</button></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>Total : $1000</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
     </div>
     <!-- bootstarp cdn js -->
