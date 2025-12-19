@@ -84,6 +84,7 @@
         font-size: 16px;
         cursor: pointer;
         transition: 0.2s;
+        margin-bottom: 5px;
       }
 
       button:hover {
@@ -103,7 +104,7 @@
       <div class="login-container mx-2 col-6">
         <h2>Login</h2>
 
-        <form>
+        <form action="succes.html">
           <label for="email">Email Address</label>
           <input
             type="email"
@@ -119,10 +120,13 @@
             placeholder="Enter your password"
             required
           />
-          <a href="succes.html"> <button type="submit">Sign In</button></a>
+          <button type="submit">Sign In</button>
+          <br />
+          <a href="index.html"> <button type="submit">Back</button></a>
         </form>
 
         <p class="note">Forgot your password?</p>
+        <a href="index.html">Back</a>
       </div>
       <img src="images/download.png" alt="" class="col-6 d-none d-md-block" />
     </div>
